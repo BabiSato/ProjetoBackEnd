@@ -1,4 +1,4 @@
-import { isValidEmail, isValidPrice, isValidTitle } from './helpers';
+import { isValidEmail, isValidPrice, isValidTitle } from "./validationHelper";
 
 describe('Helpers', () => {
   describe('isValidEmail', () => {
