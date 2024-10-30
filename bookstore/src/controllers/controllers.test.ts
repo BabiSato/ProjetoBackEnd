@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import { register, login, getAllBooks, addBook } from './controllers.test';
 import { AuthService } from '../services/authService';
 import { BookRepository } from '../repositories/bookRepository';
 

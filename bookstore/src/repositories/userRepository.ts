@@ -6,7 +6,7 @@ export class UserRepository {
   private pool: Pool = pool;
 
   async getUserByEmail(email: string): Promise<User | null> {
-    const { rows } = await this.pool.query('SELECT * FROM users WHERE email = $1', [email]);
+    const { rows } = await this.pool.query('SELECT email FROM users WHERE email = $1', [email]);
     return rows[0] || null;
   }
 

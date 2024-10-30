@@ -1,6 +1,6 @@
 import { Pool } from 'pg';
 
-const connectionString = '${{ Postgres.DATABASE_URL }}';
+const connectionString = 'postgresql://postgres:WTMGfiVWGdSujrODSGAPWKaeQpWmiNaK@junction.proxy.rlwy.net:39795/railway';
 
 const pool = new Pool({
   connectionString,
